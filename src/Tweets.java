@@ -1,5 +1,8 @@
 import java.util.ArrayList;
 
+/**
+ * это класс коллекции твитов
+ */
 public class Tweets {
 	private ArrayList<Tweet> tweets = new ArrayList<Tweet>();
 	
@@ -24,10 +27,17 @@ public class Tweets {
 		}
 	}
 
+	/**
+	 * добавляет твит в коллекцию
+	 * @param tw твит
+	 */
 	public void Add(Tweet tw){
 		tweets.add(tw);
 	}
-	
+
+	/**
+	 * выводит твиты
+	 */
 	public void Print(){
 		for(Tweet tw : tweets){
 			tw.Print();

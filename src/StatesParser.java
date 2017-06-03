@@ -1,7 +1,10 @@
 import java.util.ArrayList;
 
 public class StatesParser implements IParse<State>{
-
+	/**
+	 * парсит штаты
+	 * @param line строка
+	 * @return штат	 */
 	static public ArrayList<State> parse(String line) {
 		ArrayList<State> states = new ArrayList<State>();
 		try {

@@ -19,7 +19,7 @@ public class State {
 		coor.add(new Coordinates(x.get(i),y.get(i)));
 		}
 	}
-	
+
 	public State(String state,double [] x, double [] y){
 		this.state = state;
 		
@@ -28,8 +28,11 @@ public class State {
 		}
 	}
 
+	/**
+	 * выводит штат
+	 */
 	public void print() {
-		System.out.println("���� = " + state);
+		System.out.println("штат = " + state);
 		for(Coordinates c :coor){
 			System.out.println(c.ToString());
 		}

@@ -30,6 +30,9 @@ public class Tweet {
 		return date;
 	}
 
+	/**
+	 * выводит информацию о твите
+	 */
 	public void Print(){
 		System.out.println("Coor :\n"+ coor.ToString()+"\n" + "date = "+ format.format(date)+ "\nTweet = "+ tweet);
 	}

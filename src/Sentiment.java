@@ -18,6 +18,9 @@ public class Sentiment {
 		this.price = price;
 	}
 
+	/**
+	 * выводит все настроения
+	 */
 	public void print() {
 		System.out.println(word);
 		System.out.println(price);

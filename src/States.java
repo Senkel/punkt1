@@ -14,7 +14,9 @@ public class States implements IParse<State> {
 		}
 	}
 
-
+	/**
+	 * выводит штаты
+	 */
 	public void Print() {
 		for (State st : this.states) {
 			st.print();

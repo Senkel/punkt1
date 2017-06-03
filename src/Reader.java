@@ -3,6 +3,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+ * этот класс возвращает определенное кол-во строк из файла
+ */
 public class Reader {
 	static public ArrayList<String> read(String filename, int begin, int amount) {
 		ArrayList<String> lines = new ArrayList<String>();
@@ -41,6 +44,11 @@ public class Reader {
 		return lines;
 	}
 
+	/**
+	 * этот метод возвращает считанную строку из json файла
+	 * @param filename путь к файлу
+	 * @return строка из json
+	 */
 	static public String ReadJson(String filename) {
 		String line = null;
 		try {

@@ -19,7 +19,11 @@ public class Sentiments {
 		for(Sentiment s : sent)
 			sentiments.add(s);
 	}
-	
+
+	/**
+	 * добавляет настроение
+	 * @param s одно настроение
+	 */
 	public void Add(Sentiment s){
 		sentiments.add(s);
 	}

@@ -6,9 +6,9 @@ import java.util.Date;
 public class FilesApp {
 
 	/**
-	 * Этот мнтод делает хуйню.
+	 * этот метод выводит твиты в определенном промежутке
      *
-	 * @param args массив хуйни
+	 * @param args массив с необходимыми параметрами
 	 */
 	public static void f1(String[] args){
 		int begin = Integer.parseInt(args[1]);
@@ -38,6 +38,10 @@ public class FilesApp {
 		}
 	}
 
+	/**
+	 * выводит настроение
+	 * @param args массив с необходимыми параметрами
+	 */
 	public static void f2(String[] args){
 		ArrayList<String> Sent = Reader.read(args[3]);
 		Sentiments sentiments = new Sentiments();
@@ -49,6 +53,10 @@ public class FilesApp {
 		sentiments.Print();
 	}
 
+	/**
+	 * выводит штаты
+	 * @param args массив с необходимыми параметрами
+	 */
 	public static void f3(String[] args){
 		States states = new States(StatesParser.parse(Reader.ReadJson(args[4])));
 		states.Print();

@@ -1,6 +1,10 @@
 
 public class TweetsParser implements IParse<Tweet> {
-	
+	/**
+	 * вохвращает распаршенный твит из строки
+	 * @param line строка
+	 * @return твит
+	 */
 	static public Tweet parse(String line) {
 		String[] str = line.split("\\[|\\]");
 		String[] cord = str[1].split(", ");
